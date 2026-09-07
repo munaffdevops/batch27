@@ -1,10 +1,6 @@
-Filename:
-vars/mavenBuild.groovy
-
-Code:
 def call() {
     stage('Build using Shared Library') {
-        echo "running maven build from shared Library..."
+        echo "Running Maven build from Shared Library..."
         sh 'mvn clean package'
     }
 }
